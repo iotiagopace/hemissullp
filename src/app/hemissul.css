@@ -1109,6 +1109,67 @@ body {
   color: var(--hmx-orange);
 }
 
+.hmx-404 {
+  align-items: center;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(232, 98, 14, 0.2), rgba(232, 98, 14, 0) 30%),
+    radial-gradient(circle at 15% 25%, rgba(24, 166, 111, 0.22), rgba(24, 166, 111, 0) 32%),
+    linear-gradient(135deg, var(--hmx-navy-950), var(--hmx-navy-800));
+  color: var(--hmx-white);
+  display: grid;
+  min-height: 100svh;
+  padding: 48px 20px;
+  place-items: center;
+  text-align: center;
+}
+
+.hmx-404__inner {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  max-width: 640px;
+}
+
+.hmx-404 img {
+  height: auto;
+  width: 210px;
+}
+
+.hmx-404__code {
+  color: var(--hmx-orange);
+  font-family: var(--hmx-font-display), Arial, sans-serif;
+  font-size: clamp(64px, 12vw, 116px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.hmx-404 h1 {
+  font-family: var(--hmx-font-display), Arial, sans-serif;
+  font-size: clamp(28px, 4.2vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hmx-404 p {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 54ch;
+}
+
+.hmx-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
 .hmx-whatsapp {
   align-items: center;
   background: var(--hmx-green);

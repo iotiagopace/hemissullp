@@ -24,28 +24,14 @@ import {
   Youtube,
 } from "lucide-react";
 import Reveal from "./Reveal";
+import { whatsappHref } from "./whatsapp";
 
 const SITE_URL = "https://landing.hemissul.com.br/";
-const WHATSAPP_NUMBER = "5595991381037";
-const whatsappText = "Olá! Vim pela landing page e quero fazer uma cotação de proteção veicular. 🚗";
-
-const whatsappHref = (content: string, segment?: string) => {
-  const params = new URLSearchParams({
-    text: whatsappText,
-    utm_source: "landing",
-    utm_medium: "whatsapp",
-    utm_campaign: "protecao_veicular_roraima",
-    utm_content: content,
-  });
-
-  if (segment) params.set("vehicle_segment", segment);
-  return `https://wa.me/${WHATSAPP_NUMBER}?${params.toString().replace(/\+/g, "%20")}`;
-};
 
 export const metadata: Metadata = {
   title: "Proteção Veicular em Roraima | Hemissul",
   description:
-    "Proteja seu veículo com cobertura contra colisão, roubo, furto, perda total, danos da natureza, terceiros, assistência 24h e rastreamento. Solicite sua cotação com a Hemissul, com sede em Boa Vista, Roraima.",
+    "Proteção veicular em Boa Vista e todo o Roraima: colisão, roubo, furto, perda total, assistência 24h e rastreamento. Faça sua cotação com a Hemissul.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Hemissul Proteção Veicular em Roraima",
@@ -53,7 +39,7 @@ export const metadata: Metadata = {
       "Cobertura para carro, moto, frota e veículo de trabalho. Assistência 24h, rastreamento e atendimento presencial em Roraima.",
     url: SITE_URL,
     siteName: "Hemissul Proteção Veicular",
-    images: [{ url: "/hemissul/og.png", width: 1200, height: 630, alt: "Hemissul Proteção Veicular em Roraima" }],
+    images: [{ url: "/hemissul/og.jpg", width: 1200, height: 630, alt: "Hemissul Proteção Veicular em Roraima" }],
     locale: "pt_BR",
     type: "website",
   },
@@ -61,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hemissul Proteção Veicular em Roraima",
     description: "Proteção para carro, moto, frota e veículo de trabalho com assistência 24h, rastreamento e atendimento próximo.",
-    images: ["/hemissul/og.png"],
+    images: ["/hemissul/og.jpg"],
   },
 };
 
@@ -212,11 +198,43 @@ const pageSchema = [
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${SITE_URL}#hemissul`,
     name: "Hemissul Proteção Veicular",
+    legalName: "Hemissul Proteção Veicular",
+    taxID: "35.224.050/0001-37",
     url: SITE_URL,
-    image: `${SITE_URL}hemissul/og.png`,
+    image: `${SITE_URL}hemissul/og.jpg`,
     areaServed: ["Roraima", "Boa Vista", "Brasil"],
     description: "Proteção veicular em Roraima para carro, moto, frota e veículo de trabalho.",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Av. Mário Homem de Melo, 3999",
+      addressLocality: "Boa Vista",
+      addressRegion: "RR",
+      postalCode: "69309-198",
+      addressCountry: "BR",
+    },
+    telephone: "+55-95-99138-1037",
+    email: "contato@hemissul.com.br",
+    contactPoint: [
+      { "@type": "ContactPoint", contactType: "sales", telephone: "+55-95-99138-1037", availableLanguage: "Portuguese" },
+      { "@type": "ContactPoint", contactType: "emergency", telephone: "+55-800-940-2163", availableLanguage: "Portuguese" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00" },
+    ],
+    sameAs: [
+      "https://www.hemissul.com.br",
+      "https://www.instagram.com/hemissuloficial/",
+      "https://www.facebook.com/hemissuloficial/",
+      "https://www.youtube.com/@hemissuloficial",
+    ],
   },
   {
     "@context": "https://schema.org",

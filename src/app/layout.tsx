@@ -20,8 +20,7 @@ const onest = Onest({
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing.hemissul.com.br"),
   title: "Proteção Veicular em Roraima | Hemissul",
-  description: "Proteja seu veículo com cobertura contra colisão, roubo, furto, perda total, danos da natureza, terceiros, assistência 24h e rastreamento. Sede em Boa Vista, Roraima.",
-  keywords: ["proteção veicular Roraima", "proteção veicular Boa Vista", "proteção veicular com rastreamento"],
+  description: "Proteção veicular em Boa Vista e todo o Roraima: colisão, roubo, furto, perda total, assistência 24h e rastreamento. Faça sua cotação com a Hemissul.",
   robots: {
     index: true,
     follow: true,
