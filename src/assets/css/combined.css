@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+# template styles
+--------------------------------------------------------------*/
+@import '../css/bootstrap.min.css';
+@import '../css/animate.min.css';
+@import '../css/custom-animate.css';
+@import '../css/font-awesome-all.css';
+@import '../css/odometer.min.css';
+@import '../css/flaticon.css';
+@import '../css/nice-select.css';
+@import '../css/twentytwenty.css';
+@import '../css/style.css';
+@import '../css/responsive.css';
+@import '../css/dark.css';
+
+ img {
+  width: 100% !important;
+  height: auto !important;
+ }
+ 

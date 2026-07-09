@@ -1,0 +1,48 @@
+{
+  "name": "automart",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@ramonak/react-progress-bar": "^5.4.0",
+    "@react-email/components": "^1.0.12",
+    "flatpickr": "^4.6.13",
+    "framer-motion": "^12.23.24",
+    "jarallax": "^3.0.0",
+    "lightgallery": "^2.9.0",
+    "lucide-react": "^0.552.0",
+    "next": "16.2.4",
+    "nodemailer": "^8.0.5",
+    "rc-slider": "^11.1.9",
+    "react": "19.2.3",
+    "react-circular-progressbar": "^2.2.0",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.3",
+    "react-email": "^6.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-flatpickr": "^4.0.11",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^10.0.0",
+    "react-select": "^5.10.2",
+    "sweetalert2": "^11.26.3",
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.10.12",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?orkqwr');
+  src: url('../fonts/icomoon.eot?orkqwr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?orkqwr') format('truetype'),
+    url('../fonts/icomoon.woff?orkqwr') format('woff'),
+    url('../fonts/icomoon.svg?orkqwr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.icon-new-car:before {
+  content: "\e900";
+}
+
+.icon-bycicle:before {
+  content: "\e901";
+}
+
+.icon-boat:before {
+  content: "\e902";
+}
+
+.icon-transportation:before {
+  content: "\e903";
+}
+
+.icon-car-2:before {
+  content: "\e904";
+}
+
+.icon-digital-drawing:before {
+  content: "\e905";
+}
+
+.icon-roll-paint-brush:before {
+  content: "\e906";
+}
+
+.icon-share:before {
+  content: "\e907";
+}
+
+.icon-ruler:before {
+  content: "\e908";
+}
+
+.icon-sandblasting-machine:before {
+  content: "\e909";
+}
+
+.icon-clarification:before {
+  content: "\e90a";
+}
+
+.icon-question:before {
+  content: "\e90b";
+}
+
+.icon-interior:before {
+  content: "\e90c";
+}
+
+.icon-poly-bag:before {
+  content: "\e90d";
+}
+
+.icon-brush:before {
+  content: "\e90e";
+}
+
+.icon-car-wash-1:before {
+  content: "\e90f";
+}
+
+.icon-maintenance:before {
+  content: "\e910";
+}
+
+.icon-ai-application:before {
+  content: "\e911";
+}
+
+.icon-vetted:before {
+  content: "\e912";
+}
+
+.icon-medal:before {
+  content: "\e913";
+}
+
+.icon-cleaning-liquid:before {
+  content: "\e914";
+}
+
+.icon-review:before {
+  content: "\e915";
+}
+
+.icon-suv-car:before {
+  content: "\e916";
+}
+
+.icon-car-1:before {
+  content: "\e917";
+}
+
+.icon-taxi:before {
+  content: "\e918";
+}
+
+.icon-pickup-truck:before {
+  content: "\e919";
+}
+
+.icon-search-interface-symbol:before {
+  content: "\e91a";
+}
+
+.icon-shopping-cart:before {
+  content: "\e91b";
+}
+
+.icon-check-1:before {
+  content: "\e91c";
+}
+
+.icon-phone-call:before {
+  content: "\e91d";
+}
+
+.icon-search:before {
+  content: "\e91e";
+}
+
+.icon-professional-success:before {
+  content: "\e91f";
+}
+
+.icon-software:before {
+  content: "\e920";
+}
+
+.icon-customer-service:before {
+  content: "\e921";
+}
+
+.icon-car:before {
+  content: "\e922";
+}
+
+.icon-star:before {
+  content: "\e923";
+}
+
+.icon-quote:before {
+  content: "\e924";
+}
+
+.icon-plus:before {
+  content: "\e925";
+}
+
+.icon-minus:before {
+  content: "\e926";
+}
+
+.icon-paper-plane:before {
+  content: "\e927";
+}
+
+.icon-protection:before {
+  content: "\e928";
+}
+
+.icon-car-wash:before {
+  content: "\e929";
+}
+
+.icon-detailing:before {
+  content: "\e92a";
+}
+
+.icon-engine:before {
+  content: "\e92b";
+}
+
+.icon-left-chevron:before {
+  content: "\e92c";
+}
+
+.icon-chevron:before {
+  content: "\e92d";
+}
+
+.icon-right-up:before {
+  content: "\e92e";
+}
+
+.icon-right-arrow:before {
+  content: "\e92f";
+}
+
+.icon-call:before {
+  content: "\e930";
+}
+
+.icon-envelope:before {
+  content: "\e931";
+}
+
+.icon-location:before {
+  content: "\e932";
+}
+
+.icon-check:before {
+  content: "\e933";
+}
+
+.icon-user:before {
+  content: "\e934";
+}
+
+.icon-chat:before {
+  content: "\e935";
+}
+
+.icon-tyre:before {
+  content: "\e936";
+}
+
+.icon-disc-brake:before {
+  content: "\e937";
+}
+
+.icon-car-oil:before {
+  content: "\e938";
+}
+
+.icon-car-parts:before {
+  content: "\e939";
+}
+
+.icon-brake:before {
+  content: "\e93a";
+}
+
+.icon-car-battery:before {
+  content: "\e93b";
+}

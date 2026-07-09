@@ -1,0 +1,394 @@
+/* ===== DARK THEME ===== */
+.dark-theme {
+    background-color: var(--automart-black);
+
+    /* Heading Text (White) */
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        color: var(--automart-white) !important;
+    }
+
+    /* --- Base Backgrounds --- */
+    &.boxed-wrapper .page-wrapper,
+    & .main-menu__wrapper,
+    & .team-one__arrow::before {
+        background-color: var(--automart-black);
+    }
+
+    & .main-menu__wrapper::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: rgba(var(--automart-white-rgb), 0.10);
+    }
+
+    /* --- Dark Card Backgrounds --- */
+    & .service-one__single-wrap,
+    & .why-choose-one,
+    & .process-one__single,
+    & .counter-one,
+    & .team-one__content,
+    & .testimonial-one__single,
+    & .contact-one__right,
+    & .pricing-one__single,
+    & .blog-one__single,
+    & .accrodion-content,
+    & .accrodion-title,
+    & .services-one,
+    & .blog-one__single-two {
+        background-color: #060b16;
+    }
+
+    /* --- Primary Text (White) --- */
+    & .main-menu .main-menu__list>li>a,
+    & .stricky-header .main-menu__list>li>a,
+    & .main-menu .main-menu__list>li.dropdown>a::after,
+    & .main-menu__call-number a,
+    & .main-menu__search,
+    & .main-menu__cart,
+    & .banner-one__title,
+    & .section-title__title,
+    & .about-one__points li .content h4,
+    & .service-one__title a,
+    & .why-choose-one__progress-title,
+    & .why-choose-one__progress .count-text,
+    & .why-choose-one__call-content h5 a,
+    & .process-one__title,
+    & .process-one__text,
+    & .team-one__name a,
+    & .testimonial-one__client-name a,
+    & .contact-one__call-box .content h3 a,
+    & .pricing-one__price-points li .icon>span,
+    & .pricing-one__price-points li p,
+    & .faq-one__left .faq-one-accrodion .accrodion-title h4,
+    & .faq-one__left .faq-one-accrodion .accrodion.active .accrodion-title h4::before,
+    & .blog-one__user-title,
+    & .blog-one__title a,
+    & .blog-one__user-two-title,
+    & .blog-one__title-two a {
+        color: var(--automart-white);
+    }
+
+    /* --- Secondary Text (Muted) --- */
+    & .about-one__text,
+    & .main-menu__call-sub-title,
+    & .banner-one__text,
+    & .about-one__points li .content p,
+    & .service-one__text,
+    & .why-choose-one__text,
+    & .why-choose-one__call-content p,
+    & .team-one__sub-title,
+    & .testimonial-one__text,
+    & .testimonial-one__sub-title,
+    & .contact-one__text,
+    & .contact-one__call-box .content p,
+    & .contact-one__input-icon span,
+    & .faq-one__left .faq-one-accrodion .accrodion-content p,
+    & .blog-one__meta li a,
+    & .blog-one__text,
+    & .blog-one__meta-two li a,
+    & .blog-one__text-two {
+        color: #afafaf;
+    }
+
+    /* --- Active / Hover Nav Links --- */
+    & .main-menu .main-menu__list>li.current>a,
+    & .main-menu .main-menu__list>li:hover>a,
+    & .stricky-header .main-menu__list>li.current>a,
+    & .stricky-header .main-menu__list>li:hover>a {
+        color: var(--automart-base);
+    }
+
+    & .main-menu .main-menu__list>li.current>a::before,
+    & .main-menu .main-menu__list>li:hover>a::before,
+    & .stricky-header .main-menu__list>li.current>a::before,
+    & .stricky-header .main-menu__list>li:hover>a::before {
+        transform: scale(1, 1);
+        transform-origin: right center;
+    }
+
+    & .main-menu .main-menu__list>li.current>a::after,
+    & .main-menu .main-menu__list>li:hover>a::after,
+    & .stricky-header .main-menu__list>li.current>a::after,
+    & .stricky-header .main-menu__list>li:hover>a::after {
+        color: var(--automart-base);
+    }
+
+    /* --- Buttons --- */
+    & .thm-btn:hover {
+        color: var(--automart-base);
+    }
+
+    & .thm-btn::before {
+        background-color: var(--automart-white);
+    }
+
+    & .thm-btn::after {
+        background-color: rgba(var(--automart-white-rgb), 0.30);
+    }
+
+    /* Pricing btn shares same values — merge with above */
+    & .pricing-one__btn-box .thm-btn::before {
+        background-color: var(--automart-white);
+    }
+
+    & .pricing-one__btn-box .thm-btn::after {
+        background-color: rgba(var(--automart-white-rgb), 0.30);
+    }
+
+    /* --- Banner --- */
+    & .banner-one {
+        background: linear-gradient(0deg, rgba(7, 13, 26, 0.78) 0%, rgba(7, 13, 26, 0) 100%);
+    }
+
+    & .banner-one__shape-1,
+    & .banner-one__shape-2,
+    & .banner-one__shape-3 {
+        background-color: rgba(var(--automart-white-rgb), 0.01);
+    }
+
+    & .banner-one__img-shape-1 {
+        background-color: rgba(var(--automart-white-rgb), 0.02);
+    }
+
+    & .banner-one__shape-4 {
+        mix-blend-mode: luminosity;
+        opacity: 0.50;
+    }
+
+    /* --- Services --- */
+    & .service-one__single-shape-1 {
+        border: 1px solid rgba(var(--automart-white-rgb), 0.05);
+        background-color: var(--automart-black);
+    }
+
+    & .services-one__shape-1 {
+        background: rgba(110, 84, 243, 0.10);
+    }
+
+    /* --- Why Choose --- */
+    & .why-choose-one__progress .bar {
+        background-color: rgba(var(--automart-white-rgb), 0.10);
+    }
+
+    & .why-choose-one__call-icon:hover {
+        background-color: var(--automart-white);
+    }
+
+    & .why-choose-one__call-icon:hover span {
+        color: var(--automart-base);
+    }
+
+    /* --- Process --- */
+    & .process-one__single::before {
+        border: 1px solid rgba(var(--automart-white-rgb), 0.05);
+    }
+
+    & .process-one__count::before {
+        border: 10px solid #03050a;
+    }
+
+    /* --- Testimonial --- */
+    & .testimonial-one__bg {
+        opacity: 0.05;
+    }
+
+    & .testimonial-one__single-shape-1 {
+        background-color: rgba(var(--automart-white-rgb), 0.02);
+    }
+
+    & .testimonial-one__quote span {
+        color: rgba(var(--automart-white-rgb), 0.20);
+    }
+
+    /* --- Contact Form --- */
+    & .contact-one__input-box input[type="text"],
+    & .contact-one__input-box input[type="email"],
+    & .contact-one__input-box textarea {
+        border: 1px solid rgba(var(--automart-white-rgb), 0.10);
+        color: #afafaf;
+    }
+
+    /* --- Image Filters --- */
+    & .contact-one__shape-1 img,
+    & .faq-one__shape-1 img {
+        filter: invert(1);
+    }
+
+    & .faq-one__shape-3 img {
+        filter: grayscale(1);
+    }
+
+    /* --- FAQ --- */
+    & .faq-one {
+        background: linear-gradient(0deg, rgba(34, 193, 195, 0) 0%, rgba(6, 11, 8, 0.40) 100%);
+    }
+
+    & .faq-one__left .faq-one-accrodion .accrodion {
+        background-color: rgba(var(--automart-white-rgb), 0.01);
+        box-shadow: none;
+    }
+
+    & .faq-one__right .faq-one-accrodion .accrodion {
+        border: 1px solid rgba(var(--automart-black-rgb), .80);
+    }
+
+    & .shop-one__nav-prev span i,
+    & .shop-one__nav-next span i {
+        color: var(--automart-white);
+    }
+
+    & .contact-address:before {
+        background-color: rgba(var(--automart-black-rgb), .20);
+    }
+
+    & .main-slider__satisfied-customer {
+        background-color: rgba(var(--automart-white-rgb), .20);
+    }
+
+    & .main-slider__satisfied-customer-count,
+    & .main-slider__satisfied-customer-text,
+    & .main-slider__satisfied-customer-count span {
+        color: var(--automart-white) !important;
+    }
+
+    & .about-one__content-bottom-list p {
+        color: var(--automart-white) !important;
+    }
+
+    & .main-header-one__top {
+        background: var(--automart-black);
+        border-bottom: 1px solid rgba(var(--automart-white-rgb), 0.10);
+    }
+
+    & .main-menu__contact-list li .text p {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .main-menu__contact-list li .text p a {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .main-header__logo::before {
+        border-top: 90px solid rgba(var(--automart-white-rgb), 0.10);
+        border-right: 30px solid transparent;
+    }
+
+    & .about-one__content-text p {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .about-one__content-top-item-text p {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .about-one__content-bottom-phn-text p {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .about-one__content-bottom-phn-text h3 a {
+        color: var(--automart-white);
+    }
+
+    & .choose-one {
+        background-color: rgba(var(--automart-white-rgb), 0.05);
+    }
+
+    & .process-one__single {
+        background-color: rgba(var(--automart-white-rgb), 0.05);
+        border: 1px solid rgba(var(--automart-white-rgb), 0.05);
+        padding: 40px 0 40px;
+    }
+
+    & .process-one__single-text p {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .team-one__nav-prev span i {
+        color: var(--automart-white);
+    }
+
+    & .team-one__nav-next span i {
+        color: var(--automart-white);
+    }
+
+    & .testimonial-one__shpae-bg {
+        opacity: .07;
+    }
+
+    & .testimonial-one__client-content h3 a {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .faq-one__left-text {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .testimonial-one__nav-prev span i,
+    & .testimonial-one__nav-next span i {
+        color: var(--automart-white);
+    }
+
+    & .blog-one__single {
+        background: transparent;
+    }
+
+    & .blog-one__content {
+        background-color: rgba(var(--automart-white-rgb), 0.05);
+        border: 1px solid rgba(var(--automart-white-rgb), 0.05);
+    }
+
+    & .blog-one__text {
+        color: var(--automart-white);
+        opacity: 0.70;
+    }
+
+    & .contact-address {
+        background-color: rgba(var(--automart-white-rgb), 0.05);
+        border-top: 1px solid rgba(var(--automart-white-rgb), 0.05);
+    }
+
+
+    & .project-one__nav-prev span i,
+    & .project-one__nav-next span i {
+        color: var(--automart-white);
+    }
+
+    & .team-one__single {
+        border: 1px solid rgba(var(--automart-white-rgb), 0.10);
+        border-radius: 15px;
+    }
+
+    & .team-one__single-img-social ul li a {
+        background-color: rgba(var(--automart-white-rgb), 0.10);
+        color: var(--automart-white);
+    }
+
+    & .team-one__single-img-bdr {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+}
