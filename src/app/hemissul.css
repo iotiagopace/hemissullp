@@ -129,11 +129,12 @@ body {
 }
 
 .hmx-cta--dark {
-  background: var(--hmx-navy-900);
+  background: var(--hmx-green);
 }
 
 .hmx-cta--dark:hover {
-  background: var(--hmx-navy-800);
+  background: var(--hmx-green-deep);
+  box-shadow: 0 18px 40px rgba(24, 166, 111, 0.28);
 }
 
 .hmx-hero {
@@ -304,6 +305,10 @@ body {
 .hmx-float-card--top {
   right: 5%;
   top: 74px;
+}
+
+.hmx-float-card--top strong {
+  color: var(--hmx-orange);
 }
 
 .hmx-float-card--bottom {
@@ -903,9 +908,33 @@ body {
   display: grid;
   gap: 34px;
   grid-template-columns: minmax(0, 0.82fr) auto;
+  isolation: isolate;
   margin: 0 auto;
   max-width: 1240px;
+  overflow: hidden;
   padding: clamp(64px, 8vw, 96px) clamp(18px, 5vw, 72px);
+  position: relative;
+}
+
+.hmx-final__bg {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hmx-final__bg img {
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center 40%;
+  opacity: 0.24;
+  width: 100% !important;
+}
+
+.hmx-final__bg::after {
+  background: linear-gradient(120deg, rgba(6, 17, 31, 0.9), rgba(11, 47, 85, 0.6));
+  content: "";
+  inset: 0;
+  position: absolute;
 }
 
 .hmx-final h2 {

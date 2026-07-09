@@ -97,16 +97,6 @@ const coverages = [
     ],
   },
   {
-    icon: CloudLightning,
-    emoji: "🌩️",
-    title: "Danos da natureza",
-    bullets: [
-      "Cobertura para eventos naturais previstos",
-      "Apoio em alagamentos, tempestades e situações similares",
-      "Análise dentro das regras do regulamento",
-    ],
-  },
-  {
     icon: Clock3,
     emoji: "⏰",
     title: "Assistência 24h",
@@ -124,6 +114,16 @@ const coverages = [
       "Localização e monitoramento do veículo",
       "Mais controle para o associado",
       "Tecnologia como camada extra de segurança",
+    ],
+  },
+  {
+    icon: CloudLightning,
+    emoji: "🌩️",
+    title: "Danos da natureza",
+    bullets: [
+      "Cobertura para eventos naturais previstos",
+      "Apoio em alagamentos, tempestades e situações similares",
+      "Análise dentro das regras do regulamento",
     ],
   },
 ];
@@ -168,7 +168,7 @@ const socialProof = [
 
 const segments = [
   { icon: CarFront, title: "Carros particulares", text: "Proteção para família, trabalho, viagens e rotina em Boa Vista.", image: "/hemissul/segment-carro.webp", content: "carro_cta", segment: "carro" },
-  { icon: Briefcase, title: "Ferramenta de trabalho", text: "Para motoristas de aplicativo e quem depende do veículo para gerar renda.", image: "/hemissul/segment-app.jpg", content: "app_cta", segment: "motorista_app" },
+  { icon: Briefcase, title: "Motorista de aplicativo", text: "Para quem roda de app e depende do veículo para gerar renda todos os dias.", image: "/hemissul/segment-app.jpg", content: "app_cta", segment: "motorista_app" },
   { icon: Bike, title: "Motos", text: "Suporte para motociclistas que dependem da moto todos os dias.", image: "/hemissul/segment-moto.jpg", content: "moto_cta", segment: "moto" },
   { icon: Building2, title: "Frotas e empresas", text: "Cotação para operações com múltiplos veículos e necessidade de controle.", image: "/hemissul/segment-frota.jpg", content: "frota_cta", segment: "frota" },
 ];
@@ -477,8 +477,8 @@ export default function Page() {
           <span>Confiança</span>
           <h2>Clareza vende mais do que promessa exagerada.</h2>
           <p>
-            A página evita frases absolutas e mostra que as coberturas dependem do plano contratado. A Hemissul informa
-            que está cadastrada na SUSEP; antes da publicação final, vale incluir o número ou comprovante oficial nesta área.
+            <strong>A Hemissul está cadastrada na SUSEP.</strong> Trabalhamos com clareza: as coberturas dependem do plano
+            contratado e das condições apresentadas na proposta, sem frases absolutas nem promessas exageradas.
           </p>
         </div>
         <div className="hmx-trust__list">
@@ -510,6 +510,9 @@ export default function Page() {
       </section>
 
       <section className="hmx-final">
+        <div className="hmx-final__bg" aria-hidden="true">
+          <Image src="/hemissul/fachada.webp" alt="" fill sizes="100vw" />
+        </div>
         <div>
           <h2>Seu veículo pode estar protegido antes do próximo imprevisto.</h2>
           <p>Fale com a equipe da Hemissul e receba uma cotação para sua rotina, seu veículo e seu orçamento.</p>
