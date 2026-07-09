@@ -560,7 +560,7 @@ export default function Page() {
         </div>
 
         <div className="hmx-footer__legal">
-          <p>© 2026 Hemissul · Desenvolvido por metry.cc</p>
+          <p>© 2026 Hemissul · Desenvolvido por <a className="hmx-footer__credit" href="https://metry.cc" target="_blank" rel="noopener noreferrer">metry.cc</a></p>
           <p>A Hemissul não é seguradora. É uma associação de proteção patrimonial mutualista. Benefícios e condições seguem o regulamento vigente.</p>
         </div>
       </footer>

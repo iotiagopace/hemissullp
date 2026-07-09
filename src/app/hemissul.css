@@ -9,6 +9,9 @@
   --hmx-blue-soft: #d7e9fb;
   --hmx-green: #18a66f;
   --hmx-green-deep: #0d8053;
+  --hmx-green-strong: #0c7d4e;
+  --hmx-orange: #e8620e;
+  --hmx-orange-deep: #cc540b;
   --hmx-ink: #0d2035;
   --hmx-muted: #647588;
   --hmx-paper: #f3f7f6;
@@ -91,13 +94,15 @@ body {
 
 .hmx-cta {
   align-items: center;
-  background: var(--hmx-green);
+  background: var(--hmx-orange);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--hmx-radius);
   color: var(--hmx-white) !important;
   display: inline-flex;
-  font-size: 15px;
-  font-weight: 800;
+  font-family: var(--hmx-font-display), Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   gap: 10px;
   justify-content: center;
   min-height: 54px;
@@ -107,13 +112,13 @@ body {
 }
 
 .hmx-cta:hover {
-  background: var(--hmx-green-deep);
-  box-shadow: 0 18px 40px rgba(24, 166, 111, 0.26);
+  background: var(--hmx-orange-deep);
+  box-shadow: 0 18px 40px rgba(232, 98, 14, 0.32);
   transform: translateY(-2px);
 }
 
 .hmx-cta:focus-visible {
-  outline: 3px solid rgba(24, 166, 111, 0.35);
+  outline: 3px solid rgba(232, 98, 14, 0.4);
   outline-offset: 4px;
 }
 
@@ -307,25 +312,29 @@ body {
 }
 
 .hmx-proof-strip {
-  align-items: center;
-  background: var(--hmx-green);
+  align-items: stretch;
+  background: transparent;
   color: var(--hmx-white);
   display: grid;
-  gap: 1px;
+  gap: 10px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0 clamp(18px, 4vw, 54px) 22px;
   position: relative;
   z-index: 4;
 }
 
 .hmx-proof-strip span {
   align-items: center;
-  background: rgba(6, 17, 31, 0.12);
+  background: var(--hmx-green-strong);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
   display: flex;
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 600;
   gap: 10px;
   justify-content: center;
-  min-height: 82px;
-  padding: 18px;
+  min-height: 64px;
+  padding: 14px 18px;
   text-align: center;
 }
 
@@ -1017,6 +1026,18 @@ body {
 
 .hmx-footer__legal p {
   margin: 0;
+}
+
+.hmx-footer a.hmx-footer__credit {
+  color: var(--hmx-white);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 180ms ease;
+}
+
+.hmx-footer a.hmx-footer__credit:hover {
+  color: var(--hmx-orange);
 }
 
 .hmx-whatsapp {
