@@ -26,8 +26,8 @@ import {
 import Reveal from "./Reveal";
 
 const SITE_URL = "https://landing.hemissul.com.br/";
-const WHATSAPP_NUMBER = "5595991322532";
-const whatsappText = "Olá, quero fazer uma cotação de proteção veicular com a Hemissul.";
+const WHATSAPP_NUMBER = "5595991381037";
+const whatsappText = "Olá! Vim pela landing page e quero fazer uma cotação de proteção veicular. 🚗";
 
 const whatsappHref = (content: string, segment?: string) => {
   const params = new URLSearchParams({
@@ -39,7 +39,7 @@ const whatsappHref = (content: string, segment?: string) => {
   });
 
   if (segment) params.set("vehicle_segment", segment);
-  return `https://wa.me/${WHATSAPP_NUMBER}?${params.toString()}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?${params.toString().replace(/\+/g, "%20")}`;
 };
 
 export const metadata: Metadata = {
@@ -282,7 +282,7 @@ export default function Page() {
           <div className="hmx-hero__copy">
             <h1>Proteção veicular completa</h1>
             <p>
-              Cobertura para colisão, roubo, furto, perda total, danos da natureza, terceiros, assistência 24h e rastreamento,
+              Cobertura para colisão, roubo, furto, perda total, terceiros, assistência 24h, rastreamento e danos da natureza,
               com atendimento próximo em Roraima para quem depende do veículo todos os dias.
             </p>
             <div className="hmx-hero__actions">
