@@ -1,22 +1,18 @@
 import ContextProvider from "@/components/context/ContextProvider";
 import type { Metadata } from "next";
-import "swiper/swiper-bundle.css";
-import "jarallax/dist/jarallax.css";
-import "../assets/css/combined.css"
 import "./hemissul.css";
 import { Rubik, Onest } from "next/font/google";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["400", "600", "700", "800", "900"],
   variable: "--automart-font",
   display: "swap",
 });
 
 const onest = Onest({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700", "800", "900"],
   variable: "--automart-font-two",
   display: "swap",
 });
