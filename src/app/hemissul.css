@@ -832,19 +832,28 @@ body {
 .hmx-susep svg {
   color: var(--hmx-green);
   flex: 0 0 auto;
-  height: 28px;
-  width: 28px;
+  height: 32px;
+  width: 32px;
 }
 
-.hmx-susep p {
-  color: var(--hmx-ink);
-  font-size: 15px;
-  line-height: 1.55;
-  margin: 0;
+.hmx-susep__text {
+  display: grid;
+  gap: 7px;
 }
 
 .hmx-susep strong {
   color: var(--hmx-green-deep);
+  font-family: var(--hmx-font-display), Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+}
+
+.hmx-susep span {
+  color: var(--hmx-muted);
+  font-size: 14.5px;
+  line-height: 1.55;
 }
 
 .hmx-trust__list {

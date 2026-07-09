@@ -478,10 +478,12 @@ export default function Page() {
           <h2>Clareza vende mais do que promessa exagerada.</h2>
           <div className="hmx-susep">
             <ShieldCheck aria-hidden="true" />
-            <p>
-              <strong>A Hemissul está cadastrada na SUSEP.</strong> As coberturas dependem do plano contratado e das
-              condições apresentadas na proposta — sem promessas absolutas.
-            </p>
+            <div className="hmx-susep__text">
+              <strong>A Hemissul está cadastrada na SUSEP.</strong>
+              <span>
+                As coberturas dependem do plano contratado e das condições apresentadas na proposta, sem promessas absolutas.
+              </span>
+            </div>
           </div>
         </div>
         <div className="hmx-trust__list">
