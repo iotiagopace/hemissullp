@@ -476,10 +476,13 @@ export default function Page() {
         <div>
           <span>Confiança</span>
           <h2>Clareza vende mais do que promessa exagerada.</h2>
-          <p>
-            <strong>A Hemissul está cadastrada na SUSEP.</strong> Trabalhamos com clareza: as coberturas dependem do plano
-            contratado e das condições apresentadas na proposta, sem frases absolutas nem promessas exageradas.
-          </p>
+          <div className="hmx-susep">
+            <ShieldCheck aria-hidden="true" />
+            <p>
+              <strong>A Hemissul está cadastrada na SUSEP.</strong> As coberturas dependem do plano contratado e das
+              condições apresentadas na proposta — sem promessas absolutas.
+            </p>
+          </div>
         </div>
         <div className="hmx-trust__list">
           {["Explicação clara das coberturas", "Condições apresentadas antes da adesão", "Atendimento humano pelo WhatsApp", "Suporte depois da contratação"].map((item) => (

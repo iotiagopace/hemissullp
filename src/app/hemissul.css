@@ -817,6 +817,36 @@ body {
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
 }
 
+.hmx-susep {
+  align-items: flex-start;
+  background: rgba(24, 166, 111, 0.08);
+  border: 1px solid rgba(24, 166, 111, 0.3);
+  border-left: 4px solid var(--hmx-green);
+  border-radius: var(--hmx-radius);
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  padding: 18px 22px;
+}
+
+.hmx-susep svg {
+  color: var(--hmx-green);
+  flex: 0 0 auto;
+  height: 28px;
+  width: 28px;
+}
+
+.hmx-susep p {
+  color: var(--hmx-ink);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.hmx-susep strong {
+  color: var(--hmx-green-deep);
+}
+
 .hmx-trust__list {
   background: var(--hmx-white);
   border-radius: var(--hmx-radius);
@@ -911,8 +941,9 @@ body {
   isolation: isolate;
   margin: 0 auto;
   max-width: 1240px;
+  min-height: 380px;
   overflow: hidden;
-  padding: clamp(64px, 8vw, 96px) clamp(18px, 5vw, 72px);
+  padding: clamp(84px, 11vw, 148px) clamp(18px, 5vw, 72px);
   position: relative;
 }
 
@@ -925,13 +956,13 @@ body {
 .hmx-final__bg img {
   height: 100% !important;
   object-fit: cover;
-  object-position: center 40%;
-  opacity: 0.24;
+  object-position: center 32%;
+  opacity: 0.62;
   width: 100% !important;
 }
 
 .hmx-final__bg::after {
-  background: linear-gradient(120deg, rgba(6, 17, 31, 0.9), rgba(11, 47, 85, 0.6));
+  background: linear-gradient(90deg, rgba(6, 17, 31, 0.92) 0%, rgba(6, 17, 31, 0.66) 44%, rgba(6, 17, 31, 0.34) 100%);
   content: "";
   inset: 0;
   position: absolute;
