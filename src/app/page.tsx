@@ -590,10 +590,6 @@ export default function Page() {
           <p>A Hemissul não é seguradora. É uma associação de proteção patrimonial mutualista. Benefícios e condições seguem o regulamento vigente.</p>
         </div>
       </footer>
-
-      <a className="hmx-whatsapp" href={whatsappHref("floating_cta")} target="_blank" rel="noopener noreferrer" aria-label="Solicitar cotação pelo WhatsApp">
-        <MessageCircle aria-hidden="true" />
-      </a>
     </main>
   );
 }
