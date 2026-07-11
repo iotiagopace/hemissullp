@@ -334,16 +334,16 @@ export default function Page() {
 
       <section className="hmx-section hmx-social" id="prova">
         <div className="hmx-section__eyebrow">
-          <span>Prova social real</span>
+          <span>Histórias reais</span>
           <a href="https://www.instagram.com/hemissulprotecaoveicular/" target="_blank" rel="noopener noreferrer">
             ver Instagram <ArrowUpRight aria-hidden="true" />
           </a>
         </div>
         <div className="hmx-section__head">
-          <h2>Associados, vídeos e reparos que já apareciam na campanha.</h2>
+          <h2>Vídeos e reparos reais de quem já é associado.</h2>
           <p>
-            Relatos em vídeo, registros de indenização e reparos ajudam novos associados a entender como a Hemissul
-            atua quando o veículo deixa de ser apenas transporte e vira prioridade.
+            Depoimentos, indenizações e reparos mostram como a Hemissul responde na hora que o associado mais precisa,
+            quando o veículo deixa de ser só transporte e vira prioridade.
           </p>
         </div>
         <div className="hmx-social__rail">
