@@ -19,7 +19,6 @@ import {
   Play,
   Radar,
   ShieldCheck,
-  CloudLightning,
   Star,
   Youtube,
 } from "lucide-react";
@@ -102,22 +101,11 @@ const coverages = [
       "Tecnologia como camada extra de segurança",
     ],
   },
-  {
-    icon: CloudLightning,
-    emoji: "🌩️",
-    title: "Danos da natureza",
-    bullets: [
-      "Cobertura para eventos naturais previstos",
-      "Apoio em alagamentos, tempestades e situações similares",
-      "Análise dentro das regras do regulamento",
-    ],
-  },
 ];
 
 const benefits = [
   "Roubo e furto",
   "Danos a terceiros",
-  "Danos da natureza",
   "Carro, moto, app e frota",
   "Atendimento em Roraima",
   "Suporte em território nacional",
@@ -300,7 +288,7 @@ export default function Page() {
           <div className="hmx-hero__copy">
             <h1>Proteção veicular completa</h1>
             <p>
-              Cobertura para colisão, roubo, furto, perda total, terceiros, assistência 24h, rastreamento e danos da natureza,
+              Cobertura para colisão, roubo, furto, perda total, terceiros, assistência 24h e rastreamento,
               com atendimento próximo em Roraima para quem depende do veículo todos os dias.
             </p>
             <div className="hmx-hero__actions">
