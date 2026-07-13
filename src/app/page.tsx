@@ -150,7 +150,6 @@ const faqItems = [
   ["Tem assistência 24h?", "Sim. A Hemissul oferece assistência 24h em caso de pane elétrica ou mecânica, pane seca, chaveiro, troca de pneu e muito mais."],
   ["Proteção veicular é a mesma coisa que seguro?", "Seguro e proteção veicular têm o mesmo objetivo: proteger o seu patrimônio. A principal diferença está na contratação, que é simples, sem análise de perfil do condutor, e você conta com uma equipe de Pronta Resposta para oferecer suporte ágil quando um imprevisto acontece."],
   ["Empresas podem contratar para frota?", "Sim. Empresas podem ter a proteção da Hemissul para sua frota e garantir controle de trajetos, relatório de velocidade e rastreamento em tempo real."],
-  ["É caro proteger meu veículo?", "Na Hemissul, a cotação é feita de forma personalizada, considerando o veículo, o plano escolhido e as necessidades do associado. Como não há análise de perfil do condutor, o processo é mais simples e você pode encontrar uma proteção completa com um excelente custo-benefício."],
   ["Quando minha proteção começa a valer?", "Concluída a adesão, sua proteção passa a valer imediatamente, para que você conte com a segurança e o suporte da Hemissul desde o início."],
 ];
 
