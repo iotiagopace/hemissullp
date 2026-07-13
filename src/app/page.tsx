@@ -54,32 +54,32 @@ const coverages = [
   {
     icon: ShieldCheck,
     title: "Colisão",
-    bullets: ["Reboque", "Reparo do veículo", "Acompanhamento do processo na oficina"],
+    bullets: ["Reboque", "Reparo do veículo", "Acompanhamento do processo na oficina", "E muito mais"],
   },
   {
     icon: CarFront,
     title: "Perda total",
-    bullets: ["Reboque", "Atendimento no local do acidente", "Indenização integral do valor do veículo"],
+    bullets: ["Reboque", "Atendimento no local do acidente", "Indenização integral do valor do veículo", "E muito mais"],
   },
   {
     icon: BadgeCheck,
     title: "Roubo e furto",
-    bullets: ["Busca e localização", "Indenização integral do valor do veículo", "Acompanhamento em cada etapa"],
+    bullets: ["Busca e localização", "Indenização integral do valor do veículo", "Acompanhamento em cada etapa", "E muito mais"],
   },
   {
     icon: Handshake,
     title: "Danos a terceiros",
-    bullets: ["Reboque", "Cobertura para terceiros envolvidos no acidente", "Acompanhamento do processo na oficina"],
+    bullets: ["Reboque", "Cobertura para terceiros envolvidos no acidente", "Acompanhamento do processo na oficina", "E muito mais"],
   },
   {
     icon: Clock3,
     title: "Assistência 24h",
-    bullets: ["Reboque em caso de pane elétrica ou mecânica", "Pane seca", "Chaveiro"],
+    bullets: ["Reboque em caso de pane elétrica ou mecânica", "Pane seca", "Chaveiro", "E muito mais"],
   },
   {
     icon: Radar,
     title: "Rastreamento",
-    bullets: ["Localização em tempo real", "Cerca virtual", "Alerta de ignição"],
+    bullets: ["Localização em tempo real", "Cerca virtual", "Alerta de ignição", "E muito mais"],
   },
 ];
 
@@ -145,11 +145,11 @@ const steps = [
 
 const faqItems = [
   ["A Hemissul atende somente em Roraima?", "Não. A Hemissul oferece atendimento e suporte em todo o território nacional."],
-  ["A proteção cobre roubo, furto e colisão?", "Os planos podem incluir roubo, furto, colisão, reparo e perda total. A cobertura exata depende do plano contratado e das condições apresentadas na proposta."],
   ["A Hemissul faz análise de perfil do condutor?", "Não é analisado o perfil do associado, pois a cobertura é feita para o veículo de acordo com o valor do bem. Outras pessoas também podem dirigir o veículo, desde que sejam devidamente habilitadas."],
   ["Tem assistência 24h?", "Sim. A Hemissul oferece assistência 24h em caso de pane elétrica ou mecânica, pane seca, chaveiro, troca de pneu e muito mais."],
   ["Proteção veicular é a mesma coisa que seguro?", "Seguro e proteção veicular têm o mesmo objetivo: proteger o seu patrimônio. A principal diferença está na contratação, que é simples, sem análise de perfil do condutor, e você conta com uma equipe de Pronta Resposta para oferecer suporte ágil quando um imprevisto acontece."],
   ["Empresas podem contratar para frota?", "Sim. Empresas podem ter a proteção da Hemissul para sua frota e garantir controle de trajetos, relatório de velocidade e rastreamento em tempo real."],
+  ["É caro proteger meu veículo?", "Na Hemissul, a cotação é feita de forma personalizada, considerando o veículo, o plano escolhido e as necessidades do associado. Como não há análise de perfil do condutor, o processo é mais simples e você pode encontrar uma proteção completa com um excelente custo-benefício."],
   ["Quando minha proteção começa a valer?", "Concluída a adesão, sua proteção passa a valer imediatamente, para que você conte com a segurança e o suporte da Hemissul desde o início."],
 ];
 
@@ -292,7 +292,7 @@ export default function Page() {
           </div>
         </div>
         <div className="hmx-proof-strip">
-          {["Atendimento humanizado", "Cobertura nacional", "Sem análise de perfil", "Rastreamento veicular", "Equipe presencial em Roraima", "Planos para várias rotinas"].map((item) => (
+          {["Atendimento humanizado", "Cobertura nacional", "Sem análise de perfil"].map((item) => (
             <span key={item}>
               <Check aria-hidden="true" />
               {item}

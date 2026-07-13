@@ -679,6 +679,11 @@ body {
   width: 22px;
 }
 
+.hmx-service-card li:last-child {
+  color: var(--hmx-green-deep);
+  font-weight: 700;
+}
+
 
 .hmx-local {
   align-items: start;
