@@ -53,62 +53,44 @@ export const metadata: Metadata = {
 const coverages = [
   {
     icon: ShieldCheck,
-    emoji: "🛡️",
-    title: "Colisão e perda total",
-    bullets: [
-      "Apoio para reparos previstos no regulamento",
-      "Análise para indenização conforme o plano",
-      "Orientação durante o processo de atendimento",
-    ],
+    title: "Colisão",
+    bullets: ["Reboque", "Reparo do veículo", "Acompanhamento do processo na oficina"],
+  },
+  {
+    icon: CarFront,
+    title: "Perda total",
+    bullets: ["Reboque", "Atendimento no local do acidente", "Indenização integral do valor do veículo"],
   },
   {
     icon: BadgeCheck,
-    emoji: "🔒",
     title: "Roubo e furto",
-    bullets: [
-      "Proteção em situações de roubo ou furto",
-      "Busca, localização e análise do evento",
-      "Cobertura conforme condições contratadas",
-    ],
+    bullets: ["Busca e localização", "Indenização integral do valor do veículo", "Acompanhamento em cada etapa"],
   },
   {
     icon: Handshake,
-    emoji: "👥",
     title: "Danos a terceiros",
-    bullets: [
-      "Suporte para danos materiais a terceiros",
-      "Mais previsibilidade em caso de acidente",
-      "Condições conforme o plano escolhido",
-    ],
+    bullets: ["Reboque", "Cobertura para terceiros envolvidos no acidente", "Acompanhamento do processo na oficina"],
   },
   {
     icon: Clock3,
-    emoji: "⏰",
     title: "Assistência 24h",
-    bullets: [
-      "Atendimento para emergências previstas",
-      "Suporte em todo o território nacional",
-      "Canais de atendimento quando você precisar",
-    ],
+    bullets: ["Reboque em caso de pane elétrica ou mecânica", "Pane seca", "Chaveiro"],
   },
   {
     icon: Radar,
-    emoji: "📍",
     title: "Rastreamento",
-    bullets: [
-      "Localização e monitoramento do veículo",
-      "Mais controle para o associado",
-      "Tecnologia como camada extra de segurança",
-    ],
+    bullets: ["Localização em tempo real", "Cerca virtual", "Alerta de ignição"],
   },
 ];
 
 const benefits = [
-  "Roubo e furto",
+  "Colisão",
+  "Perda total",
+  "Assistência 24h",
   "Danos a terceiros",
-  "Carro, moto, app e frota",
-  "Atendimento em Roraima",
-  "Suporte em território nacional",
+  "Rastreamento",
+  "Pequenos reparos",
+  "Cobertura nacional",
 ];
 
 const socialProof = [
@@ -141,10 +123,10 @@ const socialProof = [
 ];
 
 const segments = [
-  { icon: CarFront, title: "Carros particulares", text: "Proteção para família, trabalho, viagens e rotina em Boa Vista.", image: "/hemissul/segment-carro.webp", content: "carro_cta", segment: "carro" },
+  { icon: CarFront, title: "Carros particulares", text: "Proteção para o veículo que transporta sua família no dia a dia.", image: "/hemissul/segment-carro.webp", content: "carro_cta", segment: "carro" },
   { icon: Briefcase, title: "Motorista de aplicativo", text: "Para quem roda de app e depende do veículo para gerar renda todos os dias.", image: "/hemissul/segment-app.jpg", content: "app_cta", segment: "motorista_app" },
-  { icon: Bike, title: "Motos", text: "Suporte para motociclistas que dependem da moto todos os dias.", image: "/hemissul/segment-moto.jpg", content: "moto_cta", segment: "moto" },
-  { icon: Building2, title: "Frotas e empresas", text: "Cotação para operações com múltiplos veículos e necessidade de controle.", image: "/hemissul/segment-frota.jpg", content: "frota_cta", segment: "frota" },
+  { icon: Bike, title: "Motos", text: "Proteção para motociclistas que dependem da moto todos os dias.", image: "/hemissul/segment-moto.jpg", content: "moto_cta", segment: "moto" },
+  { icon: Building2, title: "Frotas e empresas", text: "Proteção para operações com múltiplos veículos e necessidade de controle.", image: "/hemissul/segment-frota.jpg", content: "frota_cta", segment: "frota" },
 ];
 
 const footerContacts = [
@@ -162,14 +144,14 @@ const steps = [
 ];
 
 const faqItems = [
-  ["A Hemissul atende somente em Roraima?", "Não. A Hemissul tem presença em Roraima, mas oferece atendimento e suporte em todo o território nacional, conforme a rede disponível e as condições do plano contratado."],
+  ["A Hemissul atende somente em Roraima?", "Não. A Hemissul oferece atendimento e suporte em todo o território nacional."],
   ["A proteção cobre roubo, furto e colisão?", "Os planos podem incluir roubo, furto, colisão, reparo e perda total. A cobertura exata depende do plano contratado e das condições apresentadas na proposta."],
-  ["Tem assistência 24h?", "Sim. A Hemissul oferece assistência 24h para dar suporte em situações de emergência previstas no plano."],
-  ["Proteção veicular é a mesma coisa que seguro?", "Não. Proteção veicular e seguro tradicional são modelos diferentes. A equipe explica como funciona a associação, quais coberturas se aplicam e quais são as regras do plano."],
-  ["Empresas podem contratar para frota?", "Sim. Empresas com mais de um veículo podem solicitar cotação para frota e receber uma proposta conforme a necessidade da operação."],
-  ["Quanto custa para proteger meu veículo?", "O valor depende do veículo, do perfil de uso e do plano escolhido. A cotação é personalizada e feita pelo WhatsApp, sem compromisso, com as condições apresentadas na proposta."],
-  ["Preciso fazer vistoria ou análise do veículo?", "Em geral há uma análise do veículo antes da adesão. A equipe explica cada etapa durante a cotação, conforme as regras do plano contratado."],
-  ["Existe carência ou prazo de espera?", "Alguns benefícios podem ter prazos ou regras específicas previstas no regulamento vigente. A equipe apresenta todas as condições antes da adesão para você decidir com segurança."],
+  ["A Hemissul faz análise de perfil do condutor?", "Não é analisado o perfil do associado, pois a cobertura é feita para o veículo de acordo com o valor do bem. Outras pessoas também podem dirigir o veículo, desde que sejam devidamente habilitadas."],
+  ["Tem assistência 24h?", "Sim. A Hemissul oferece assistência 24h em caso de pane elétrica ou mecânica, pane seca, chaveiro, troca de pneu e muito mais."],
+  ["Proteção veicular é a mesma coisa que seguro?", "Seguro e proteção veicular têm o mesmo objetivo: proteger o seu patrimônio. A principal diferença está na contratação, que é simples, sem análise de perfil do condutor, e você conta com uma equipe de Pronta Resposta para oferecer suporte ágil quando um imprevisto acontece."],
+  ["Empresas podem contratar para frota?", "Sim. Empresas podem ter a proteção da Hemissul para sua frota e garantir controle de trajetos, relatório de velocidade e rastreamento em tempo real."],
+  ["É caro proteger meu veículo?", "Na Hemissul, a cotação é feita de forma personalizada, considerando o veículo, o plano escolhido e as necessidades do associado. Como não há análise de perfil do condutor, o processo é mais simples e você pode encontrar uma proteção completa com um excelente custo-benefício."],
+  ["Quando minha proteção começa a valer?", "Concluída a adesão, sua proteção passa a valer imediatamente, para que você conte com a segurança e o suporte da Hemissul desde o início."],
 ];
 
 const faqSchema = {
@@ -288,8 +270,8 @@ export default function Page() {
           <div className="hmx-hero__copy">
             <h1>Proteção veicular completa</h1>
             <p>
-              Cobertura para colisão, roubo, furto, perda total, terceiros, assistência 24h e rastreamento,
-              com atendimento próximo em Roraima para quem depende do veículo todos os dias.
+              Cobertura contra colisão, perda total, roubo, furto, danos a terceiros, assistência 24h, rastreamento e muito mais.
+              Suporte ágil para quem depende do veículo todos os dias.
             </p>
             <div className="hmx-hero__actions">
               <Cta content="hero_cta">Solicitar cotação</Cta>
@@ -311,7 +293,7 @@ export default function Page() {
           </div>
         </div>
         <div className="hmx-proof-strip">
-          {["Equipe presencial em Roraima", "Atendimento nacional", "Rastreamento veicular", "Planos para várias rotinas"].map((item) => (
+          {["Atendimento humanizado", "Cobertura nacional", "Sem análise de perfil", "Rastreamento veicular", "Equipe presencial em Roraima", "Planos para várias rotinas"].map((item) => (
             <span key={item}>
               <Check aria-hidden="true" />
               {item}
@@ -328,10 +310,10 @@ export default function Page() {
           </a>
         </div>
         <div className="hmx-section__head">
-          <h2>Vídeos e reparos reais de quem já é associado.</h2>
+          <h2>Histórias reais. Resultados que comprovam nossa proteção.</h2>
           <p>
-            Depoimentos, indenizações e reparos mostram como a Hemissul responde na hora que o associado mais precisa,
-            quando o veículo deixa de ser só transporte e vira prioridade.
+            Assista aos depoimentos dos nossos associados, veja fotos de antes e depois dos reparos e confira
+            indenizações que demonstram nosso compromisso.
           </p>
         </div>
         <div className="hmx-social__rail">
@@ -368,11 +350,10 @@ export default function Page() {
       <section className="hmx-section hmx-problem">
         <div className="hmx-problem__panel">
           <p className="hmx-kicker">Proteção para a vida real</p>
-          <h2>Um acidente, uma pane ou um roubo não avisam antes.</h2>
+          <h2>Quando o inesperado acontece, rapidez e confiança fazem toda a diferença.</h2>
           <p>
-            Quem usa o veículo para trabalhar, levar a família ou manter uma empresa rodando precisa de clareza antes da
-            contratação e suporte quando algo acontece. A Hemissul atua nessa ponte: orientação, cobertura e atendimento
-            próximo para quem circula em Roraima.
+            A Hemissul protege o seu veículo com soluções completas, suporte especializado e uma equipe comprometida
+            em estar ao seu lado do início ao fim.
           </p>
           <Cta content="dor_cta" variant="dark">Quero proteger meu veículo</Cta>
         </div>
@@ -389,8 +370,8 @@ export default function Page() {
       <section className="hmx-section hmx-coverage" id="coberturas">
         <div className="hmx-section__head hmx-section__head--center">
           <span>O que pode entrar no plano</span>
-          <h2>Cobertura completa para seu veículo</h2>
-          <p>As coberturas e benefícios dependem do plano contratado e das condições apresentadas na proposta.</p>
+          <h2>Tudo o que você precisa para proteger o seu veículo.</h2>
+          <p>Escolha o plano que faz sentido para a sua necessidade e conte com uma proteção pensada para dar mais tranquilidade no dia a dia.</p>
         </div>
         <div className="hmx-coverage__grid">
           {coverages.map(({ icon: Icon, title, bullets }, index) => (
@@ -418,10 +399,10 @@ export default function Page() {
       <section className="hmx-section hmx-local">
         <div className="hmx-local__copy">
           <span>Boa Vista é a nossa casa</span>
-          <h2>Atendimento local, assistência nacional e clareza antes da contratação.</h2>
+          <h2>Nascemos em Boa Vista. Protegemos veículos em todo o Brasil.</h2>
           <p>
-            Desde 2019, a Hemissul trabalha para levar conforto, segurança e tranquilidade aos associados, com regras claras,
-            atendimento humano e suporte para quem circula em Roraima e também em outras regiões do Brasil.
+            Desde 2019, a Hemissul tem o propósito de levar conforto, segurança e tranquilidade a milhares de associados,
+            com atendimento humanizado, transparência e uma equipe preparada para proteger seu patrimônio.
           </p>
           <Cta content="regional_cta" variant="dark">Falar com a equipe</Cta>
         </div>
@@ -481,19 +462,17 @@ export default function Page() {
       <section className="hmx-section hmx-trust">
         <div>
           <span>Confiança</span>
-          <h2>Clareza vende mais do que promessa exagerada.</h2>
+          <h2>Transparência para você escolher a proteção certa, sem surpresas.</h2>
           <div className="hmx-susep">
             <ShieldCheck aria-hidden="true" />
             <div className="hmx-susep__text">
-              <strong>A Hemissul está cadastrada na SUSEP.</strong>
-              <span>
-                As coberturas dependem do plano contratado e das condições apresentadas na proposta, sem promessas absolutas.
-              </span>
+              <strong>A Hemissul está devidamente cadastrada na SUSEP.</strong>
+              <span>Superintendência de Seguros Privados.</span>
             </div>
           </div>
         </div>
         <div className="hmx-trust__list">
-          {["Explicação clara das coberturas", "Condições apresentadas antes da adesão", "Atendimento humano pelo WhatsApp", "Suporte depois da contratação"].map((item) => (
+          {["Explicação clara das coberturas", "Condições apresentadas antes da adesão", "Atendimento humano", "Suporte depois da contratação"].map((item) => (
             <span key={item}>
               <Star aria-hidden="true" />
               {item}

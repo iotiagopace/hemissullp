@@ -322,7 +322,7 @@ body {
   color: var(--hmx-white);
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 0 clamp(18px, 4vw, 54px) 22px;
   position: relative;
   z-index: 4;
