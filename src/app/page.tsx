@@ -368,7 +368,6 @@ export default function Page() {
 
       <section className="hmx-section hmx-coverage" id="coberturas">
         <div className="hmx-section__head hmx-section__head--center">
-          <span>O que pode entrar no plano</span>
           <h2>Tudo o que você precisa para proteger o seu veículo.</h2>
           <p>Escolha o plano que faz sentido para a sua necessidade e conte com uma proteção pensada para dar mais tranquilidade no dia a dia.</p>
         </div>
